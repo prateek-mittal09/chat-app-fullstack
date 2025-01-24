@@ -11,7 +11,9 @@ export default defineConfig({
     port:3000,
     proxy:{
       "/api":{
-        target:"https://chat-app-fullstack-2dow.onrender.com/login"
+        target:"https://chat-app-fullstack-2dow.onrender.com/",
+        changeOrigin:true,
+        secure:false,
       }
     }
   }
